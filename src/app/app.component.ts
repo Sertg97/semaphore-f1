@@ -24,8 +24,9 @@ export class AppComponent {
     const light9 = document.getElementById("light9");
     const light10 = document.getElementById("light10");
     const alertSound = document.getElementById("audio-alert") as HTMLAudioElement;
+    const alertSound2 = document.getElementById("audio-start") as HTMLAudioElement;
   
-    if (light1 && light2 && light3 && light4 && light5 && light6 && light7 && light8 && light9 && light10 && alertSound) {
+    if (light1 && light2 && light3 && light4 && light5 && light6 && light7 && light8 && light9 && light10 && alertSound && alertSound2) {
       this.isRed = true;
   
       setTimeout(() => {
@@ -59,6 +60,7 @@ export class AppComponent {
 
                   setTimeout(() => {
                     this.changeColorGreen();
+                    alertSound2.play();
 
                     setTimeout(() => {
                       this.changeToDefaultGreen();
