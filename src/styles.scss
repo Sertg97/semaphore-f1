@@ -42,8 +42,37 @@
 
 .red{
     background-color: red;
+    box-shadow: 0px 0px 20px 10px rgba(255, 0, 0, 0.5);
 }
 
 .green{
     background-color: green;
+    box-shadow: 0px 0px 32px 10px rgba(34, 255, 0, 0.5);
 }
+
+.btn-start{
+    border-radius: 50px; /* establece la curvatura del borde */
+    padding: 30px 25px; /* ajusta el tamaño del botón según tu necesidad */
+    background-color: #1F1F1F; /* establece el color de fondo del botón */
+    color: white; /* establece el color de texto del botón */
+    border: none; /* elimina el borde del botón */
+    cursor: pointer; /* cambia el cursor al pasar sobre el botón */
+}
+
+.btn-start:hover {
+    opacity: 0.9;
+}
+
+.btn-start::after {
+    content: '';
+    position: absolute;
+    bottom: 550px;
+    left: 35px;
+    width: 20px;
+    height: 3px;
+    background-color: red;
+    cursor: pointer; /* cambia el cursor al pasar sobre el botón */
+}
+
+  
+  
