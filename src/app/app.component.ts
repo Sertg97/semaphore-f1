@@ -23,29 +23,35 @@ export class AppComponent {
     const light8 = document.getElementById("light8");
     const light9 = document.getElementById("light9");
     const light10 = document.getElementById("light10");
+    const alertSound = document.getElementById("audio-alert") as HTMLAudioElement;
   
-    if (light1 && light2 && light3 && light4 && light5 && light6 && light7 && light8 && light9 && light10) {
+    if (light1 && light2 && light3 && light4 && light5 && light6 && light7 && light8 && light9 && light10 && alertSound) {
       this.isRed = true;
   
       setTimeout(() => {
         light1.classList.add("red");
         light2.classList.add("red");
+        alertSound.play(); // Reproduce el sonido
   
         setTimeout(() => {
           light3.classList.add("red");
           light4.classList.add("red");
+          alertSound.play();
   
           setTimeout(() => {
             light5.classList.add("red");
             light6.classList.add("red");
+            alertSound.play();
   
             setTimeout(() => {
               light7.classList.add("red");
               light8.classList.add("red");
+              alertSound.play();
 
               setTimeout(() => {
                 light9.classList.add("red");
                 light10.classList.add("red");
+                alertSound.play();
 
                 setTimeout(() => {
                   this.changeToDefault();
