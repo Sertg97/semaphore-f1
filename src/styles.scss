@@ -7,6 +7,7 @@
     padding: 0 30px; 
   }
 
+
 .container-parent::before {
     content: "";
     position: absolute;
@@ -17,6 +18,7 @@
     background-color: black;
     transform: translateY(-50%);
     z-index: -1;
+
 }
 
 .container{
