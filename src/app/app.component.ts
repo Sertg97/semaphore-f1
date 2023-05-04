@@ -50,6 +50,14 @@ export class AppComponent {
                 setTimeout(() => {
                   this.changeToDefault();
                   this.isRed = false;
+
+                  setTimeout(() => {
+                    this.changeColorGreen();
+
+                    setTimeout(() => {
+                      this.changeToDefaultGreen();
+                    }, 4000);
+                  }, 100);
                 }, 4000);
               }, 2000);
             }, 2000);
@@ -96,6 +104,68 @@ export class AppComponent {
     }
   }
 
+  changeColorGreen() {
+    const lightG1 = document.getElementById("lightG1");
+    const lightG2 = document.getElementById("lightG2");
+    const lightG3 = document.getElementById("lightG3");
+    const lightG4 = document.getElementById("lightG4");
+    const lightG5 = document.getElementById("lightG5");
+    const lightG6 = document.getElementById("lightG6");
+    const lightG7 = document.getElementById("lightG7");
+    const lightG8 = document.getElementById("lightG8");
+    const lightG9 = document.getElementById("lightG9");
+    const lightG10 = document.getElementById("lightG10");
+
+    if (lightG1 && lightG2 && lightG3 && lightG4 && lightG5 && lightG6 && lightG7 && lightG8 && lightG9 && lightG10) {
+      lightG1.classList.add("green");
+      lightG2.classList.add("green");
+      lightG3.classList.add("green");
+      lightG4.classList.add("green");
+      lightG5.classList.add("green");
+      lightG6.classList.add("green");
+      lightG7.classList.add("green");
+      lightG8.classList.add("green");
+      lightG9.classList.add("green");
+      lightG10.classList.add("green");
+    }
+  }
+
+  changeToDefaultGreen() {
+    const lightG1 = document.getElementById("lightG1");
+    const lightG2 = document.getElementById("lightG2");
+    const lightG3 = document.getElementById("lightG3");
+    const lightG4 = document.getElementById("lightG4");
+    const lightG5 = document.getElementById("lightG5");
+    const lightG6 = document.getElementById("lightG6");
+    const lightG7 = document.getElementById("lightG7");
+    const lightG8 = document.getElementById("lightG8");
+    const lightG9 = document.getElementById("lightG9");
+    const lightG10 = document.getElementById("lightG10");
+
+    if (lightG1 && lightG2 && lightG3 && lightG4 && lightG5 && lightG6 && lightG7 && lightG8 && lightG9 && lightG10) {
+      lightG1.classList.remove("green");
+      lightG2.classList.remove("green");
+      lightG3.classList.remove("green");
+      lightG4.classList.remove("green");
+      lightG5.classList.remove("green");
+      lightG6.classList.remove("green");
+      lightG7.classList.remove("green");
+      lightG8.classList.remove("green");
+      lightG9.classList.remove("green");
+      lightG10.classList.remove("green");
+
+      lightG1.classList.add("color-default");
+      lightG2.classList.add("color-default");
+      lightG3.classList.add("color-default");
+      lightG4.classList.add("color-default");
+      lightG5.classList.add("color-default");
+      lightG6.classList.add("color-default");
+      lightG7.classList.add("color-default");
+      lightG8.classList.add("color-default");
+      lightG9.classList.add("color-default");
+      lightG10.classList.add("color-default");
+    }
+  }
 }
 
 
